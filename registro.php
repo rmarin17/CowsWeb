@@ -33,7 +33,7 @@
     <div class="section"></div>
     <h5><center><p id="title"class="indigo-text">Registro</p></center></h5>
         <br></br>
-            <div id="main" class="row" Style="margin-left: 300px; margin-right: 300px;">	
+            <div class="container">	
                 <form class="col s12"action="includes/regisusers.php" method="POST" enctype="multipart/form-data">
                 
                     <div class="row" >

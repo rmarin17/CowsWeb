@@ -16,10 +16,9 @@ if($_SESSION['u_pago'] != '1')
     <main>
       <h1 class="grey-text text-darken-2" align="center" style="font-size:50px;font-family:Constantia;">Control de Reproducción</h1>      
         <div  class="container">
-            <!-- Comienza el Card -->
-            
+            <!-- Comienza el Card -->            
             <div class="row">
-                <div class="col s4 m4">
+                <div class="col m4">
                   <div class="card hoverable medium"  onclick="location.href='celos.php?idu=<?php echo $idu ?>'">
                     <div class="card-image">
                       <img src="images/newcow.jpg">
@@ -32,7 +31,7 @@ if($_SESSION['u_pago'] != '1')
                     </div>
                   </div>
                 </div>
-                <div class="col s4 m4">
+                <div class="col m4">
                   <div class="card hoverable medium" onclick="location.href='partos.php?idu=<?php echo $idu ?>'">
                     <div class="card-image">
                       <img src="images/listcows.jpg">
@@ -45,7 +44,7 @@ if($_SESSION['u_pago'] != '1')
                     </div>
                   </div>
                 </div>
-                <div class="col s4 m4">
+                <div class="col m4">
                   <div class="card hoverable medium"  onclick="location.href='listcowsrepro.php?idu=<?php echo $idu ?>'">
                     <div class="card-image">
                       <img src="images/newcow.jpg">

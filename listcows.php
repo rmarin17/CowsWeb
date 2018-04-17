@@ -105,10 +105,7 @@ $url=str_replace('/ProCows/','',$fullUrl);
       </div>
     
     <h1 class="grey-text text-darken-2" align="center" style="font-size:50px;font-family:Constantia;">Listado del Ganado</h1>
-      <div Style="margin-left: 10%; margin-right: 10%;">
-            
-            
-            <br></br>
+      <div class="container">                                   
             <!-- collapsible la tabla -->
             <ul class="collapsible popout " data-collapsible="accordion">
             <?php
@@ -294,8 +291,7 @@ $url=str_replace('/ProCows/','',$fullUrl);
                 <div class="collapsible-header">                  
                   <img  width="60" src="<?php echo $fila['imagen'];?>">
                   <p Style="margin-left:10px;margin-top:10px"><?php echo $fila['nombre'];?></p>                                   
-                  <p></p>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <p></p>                  
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

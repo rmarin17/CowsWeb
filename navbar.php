@@ -39,11 +39,15 @@
         <li><a href="includes/out.php"><i class="material-icons right">eject</i>Salir</a></li>
         <!--<li><a href="includes/out.php">Salir</a></li>-->
       </ul>
-      <!--MENU LATERAL-->
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">ProwCows</a></li>
+      <!--MENU LATERAL-->      
+      <ul id="nav-mobile" class="side-nav">        
+        <li><a href="controlg.php?idu=<?php echo $idu?>" >Ganado</a></li>
+        <li><a href="#!">Potreros</a></li>
+        <li><a href="includes/out.php"><i class="material-icons right">eject</i>Salir</a></li>
+        <!--<li><a href="includes/out.php">Salir</a></li>-->      
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      
     </div>
   </nav>
   

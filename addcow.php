@@ -28,7 +28,7 @@ if($_SESSION['u_pago'] != '1')
   <body>
     <main>
       <h1 class="grey-text text-darken-2" align="center" style="font-size:50px;font-family:Constantia;">Agregar Ganado</h1>
-        <div  Style="margin-left: 10%; margin-right: 10%">
+        <div  class="container">
           <div  class="section">
             <!-- Comienza los tabs -->
             <div class="panel">
