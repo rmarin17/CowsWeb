@@ -275,10 +275,10 @@ $url=str_replace('/ProCows/','',$fullUrl);
                       break;                                
                 }                 
               } else {
-                $sql2 = "SELECT * from ganado where idu=$idu order by nombre ASC";
+                $sql2 = "SELECT * from ganado where idu=$idu AND descarte='no' order by nombre ASC";
               }
               if ($ban == 0){
-                $sql2 = "SELECT * from ganado where idu=$idu order by nombre ASC";
+                $sql2 = "SELECT * from ganado where idu=$idu AND descarte='no' order by nombre ASC";
               } if ($ban == 1){
                 $sql2 = "SELECT * from ganado where idu=$idu $filtrado $desechado $ordenar "; 
               }                                 

@@ -57,7 +57,7 @@ if($_SESSION['u_pago'] != '1')
                                 </thead>  
                             <?php
                             include 'includes/conexion.php';
-                            $sql = "SELECT * from ganado where idu=$idu ORDER BY nombre";
+                            $sql = "SELECT * from ganado where idu=$idu AND descarte='no' ORDER BY nombre";
                             $res =mysqli_query($conn,$sql);
                             //$datos='';
                             if(mysqli_num_rows($res) == 0){ ?>
@@ -107,7 +107,7 @@ if($_SESSION['u_pago'] != '1')
                         </section>
                     </div>
                     <div id="cowlist" class="col s12">
-                        <form method="post" action="includes/delvarcelos.php">
+                        <form method="post" action="includes/delvarvacu.php">
                             <table id="tabla" class="highlight centered responsive-table" title="Lista de Celos">  
                                 <thead>                          
                                     <tr>
@@ -135,7 +135,7 @@ if($_SESSION['u_pago'] != '1')
                                         <td><?php echo $fila['nombre'];?></td>
                                         <td><?php echo $fila['fecha'];?></td>
                                         <td><?php echo $fila['tipo'];?></td>                                     
-                                        <td><input type="checkbox" class="filled-in" id="select_<?php echo $fila['idc'];?>" name="eliminar[]" value="<?php echo $fila['idc'];?>"/><label for="select_<?php echo $fila['idc'];?>"></label></td>
+                                        <td><input type="checkbox" class="filled-in" id="select_<?php echo $fila['idv'];?>" name="eliminar[]" value="<?php echo $fila['idv'];?>"/><label for="select_<?php echo $fila['idv'];?>"></label></td>
                                         <td><a href="modvacu.php?idv=<?php echo $fila['idv'];?>&idu=<?php echo $fila['idu'];?>"><i Style="color:#546e7a;" class="material-icons">edit</i></a></td>                                        
                                     </tr>
                                 <tbody>  
@@ -171,7 +171,7 @@ if($_SESSION['u_pago'] != '1')
                             </div>
                             <div class="modal-footer">
                             <a class="modal-action modal-close waves-effect waves-green btn-flat">No</a>
-                            <input href="includes/delevarvacu.php?tabla=celos" type="submit" name="borrar" class="modal-action modal-close waves-effect waves-green btn-flat" value="Si"></input>
+                            <input type="submit" name="borrar" class="modal-action modal-close waves-effect waves-green btn-flat" value="Si"></input>
                             </div>
                         </div>
                         </form>

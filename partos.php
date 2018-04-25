@@ -57,7 +57,7 @@ if($_SESSION['u_pago'] != '1')
                                 </thead>  
                             <?php
                             include 'includes/conexion.php';
-                            $sql = "SELECT * from ganado where idu=$idu";
+                            $sql = "SELECT * from ganado where idu=$idu AND descarte='no'";
                             $res =mysqli_query($conn,$sql);
                             //$datos='';
                             if(mysqli_num_rows($res) == 0){ ?>
@@ -136,7 +136,7 @@ if($_SESSION['u_pago'] != '1')
                                         <td><?php echo $fila['nombre'];?></td>                                        
                                         <td><?php echo $fila['fecha_parto'];?></td>                                                                                
                                         <td><?php echo $fila['cria'];?></td>                                                                          
-                                        <td><input type="checkbox" class="filled-in" id="select_<?php echo $fila['idc'];?>" name="eliminar[]" value="<?php echo $fila['idc'];?>"/><label for="select_<?php echo $fila['idc'];?>"></label></td>
+                                        <td><input type="checkbox" class="filled-in" id="select_<?php echo $fila['idp'];?>" name="eliminar[]" value="<?php echo $fila['idp'];?>"/><label for="select_<?php echo $fila['idp'];?>"></label></td>
                                         <td><a href="modpartos.php?idp=<?php echo $fila['idp'];?>&idu=<?php echo $fila['idu'];?>"><i Style="color:#546e7a;" class="material-icons">edit</i></a></td>                                        
                                     </tr>
                                 <tbody>  
@@ -172,7 +172,7 @@ if($_SESSION['u_pago'] != '1')
                             </div>
                             <div class="modal-footer">
                             <a class="modal-action modal-close waves-effect waves-green btn-flat">No</a>
-                            <input href="includes/delevarpartos.php?tabla=celos" type="submit" name="borrar" class="modal-action modal-close waves-effect waves-green btn-flat" value="Si"></input>
+                            <input type="submit" name="borrar" class="modal-action modal-close waves-effect waves-green btn-flat" value="Si"></input>
                             </div>
                         </div>
                         </form>

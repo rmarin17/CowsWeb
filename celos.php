@@ -57,7 +57,7 @@ if($_SESSION['u_pago'] != '1')
                                 </thead>  
                             <?php
                             include 'includes/conexion.php';
-                            $sql = "SELECT * from ganado where idu=$idu ORDER BY nombre";
+                            $sql = "SELECT * from ganado where idu=$idu AND descarte='no' ORDER BY nombre";
                             $res =mysqli_query($conn,$sql);
                             //$datos='';
                             if(mysqli_num_rows($res) == 0){ ?>
