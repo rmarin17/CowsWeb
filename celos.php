@@ -70,7 +70,7 @@ if($_SESSION['u_pago'] != '1')
                                         <td><img src="<?php echo $fila['imagen'];?>" alt=""  class="circle" style="width:100px;height:100px;"></td>
                                         <td><?php echo $fila['nombre'];?></td>
                                         <td><?php echo $fila['raza'];?></td>                                       
-                                        <td><a href="regisparto.php?id=<?php echo $fila['idg'];?>&idu=<?php echo $fila['idu'];?>"><i Style="color:#546e7a;" class="material-icons">add_circle</i></a></td>                                        
+                                        <td><a href="regiscelos.php?id=<?php echo $fila['idg'];?>&idu=<?php echo $fila['idu'];?>"><i Style="color:#546e7a;" class="material-icons">add_circle</i></a></td>                                        
                                     </tr>
                                 <tbody>  
                                 <?php $datos='si';
